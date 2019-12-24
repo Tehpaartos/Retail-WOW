@@ -48,6 +48,16 @@ The below shots, will not interput Rapid Shot, will prio target the mouse over o
 /use [@mouseover,harm,nodead,nochanneling:Rapid Fire] Arcane Shot [nochanneling:Rapid Fire] Arcane Shot
 ```
 
+## Rapid Fire
+```
+#showtooltip Rapid Fire
+/petattack
+/startattack
+/use Claw(Basic Attack)
+/use Bite(Basic Attack)
+/use Smack(Basic Attack)
+/use [@mouseover,harm,nodead,nochanneling:Rapid Fire] Rapid Fire [nochanneling:Rapid Fire] Rapid Fire
+```
 
 ## Counter Shot
 ```
@@ -61,9 +71,47 @@ The below shots, will not interput Rapid Shot, will prio target the mouse over o
 ```
 Note: This shot will interupt Rapid Shot
 
+## True Shot
+```
+#showtooltip Trueshot
+/use [nochanneling:Rapid Fire] Trueshot
+```
 
+## Double Tap
+```
+#showtooltip Double Tap
+/use [nochanneling:Rapid Fire] Double Tap
+```
 
+## Tar Trap
+```
+#showtooltip Tar Trap
+/cast [@cursor] Tar Trap
+```
 
+## Freezing Trap
+```
+#showtooltip Freezing Trap
+/cast [@cursor] Freezing Trap
+```
+
+## Flare
+```
+#showtooltip Flare
+/cast [@cursor] Flare
+```
+
+## Light's Judgment(Racial)
+```
+#showtooltip
+/cast [nochanneling:Rapid Fire] Light's Judgment(Racial)
+```
+
+## Cancel Aspect of the Turtle
+```
+/cancelaura Aspect of the Turtle
+```
+Note : I like to have this on a seconday key so i can spam Aspect of the Turtle
 
 
 
