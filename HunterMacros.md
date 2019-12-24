@@ -3,10 +3,10 @@
 
 
 The below *Shots* macros will :
-* Not interput Rapid Shot 
-* Will prioty target the mouse over target
-* If no mouse over it will hit the players target
-* The key benfit here is that you never drop the main target.
+* Not interpret Rapid Shot
+* Will priority target the mouseover target
+* If no mouseover, the players target will be attacked
+* The key benefit is that you never drop the main target
 
 ## Aimed Shot
 ```
