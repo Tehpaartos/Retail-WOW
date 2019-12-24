@@ -9,5 +9,5 @@
 /use Claw(Basic Attack)
 /use Bite(Basic Attack)
 /use Smack(Basic Attack)
-/use [[@mouseover,harm,nodead,nochanneling:Rapid Fire] Arcane Shot [nochanneling:Rapid Fire] Arcane Shot
+/use [@mouseover,harm,nodead,nochanneling:Rapid Fire] Arcane Shot [nochanneling:Rapid Fire] Arcane Shot
 ```
