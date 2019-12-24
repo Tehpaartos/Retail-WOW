@@ -2,7 +2,11 @@
 
 
 
-The below shots, will not interput Rapid Shot, will prio target the mouse over otherwise hit the mail target.  The key benfit here is that you never drop the main target.
+The below *Shots* macros will :
+* Not interput Rapid Shot 
+* Will prioty target the mouse over target
+* If no mouse over it will hit the players target
+* The key benfit here is that you never drop the main target.
 
 ## Aimed Shot
 ```
