@@ -85,6 +85,12 @@ Note: This shot will interupt Rapid Shot
 /use [pet:Stag]Nature's Grace(Special Ability)
 /use [pet:Rupert]Spore Cloud(Special Ability)
 /use [pet:Hati]Spirit Shock(Special Ability)
-``
+```
 
+## Use Extra Action Buttion & Cancel Slow Fall
+```
+/click ExtraActionButton1
+/cancelaura slow fall
+```
+Usefull for Mecha 
 
