@@ -109,6 +109,40 @@ The below *Shots* macros will :
 #showtooltip Double Tap
 /use [nochanneling:Rapid Fire] Double Tap
 ```
+
+# BM
+
+## Barbed Shot
+```
+#showtooltip Barbed Shot
+/startattack
+/petattack [@pettarget,noexists]target
+/use [@mouseover,harm,nodead] [] Barbed Shot
+```
+
+## A Murder of Crows
+```
+#showtooltip A Murder of Crows
+/startattack
+/petattack [@pettarget,noexists]target
+/use [@mouseover,harm,nodead] [] A Murder of Crows
+```
+
+## Cobra Shot
+```
+#showtooltip Cobra Shot
+/startattack
+/petattack [@pettarget,noexists]target
+/use [@mouseover,harm,nodead] [] Cobra Shot
+```
+
+## Counter Shot
+```
+#showtooltip Counter Shot
+/stopcasting
+/use [@mouseover,harm,nodead] Counter Shot [] Counter Shot
+```
+
 # SV
 
 ### Serpent Sting
