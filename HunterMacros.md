@@ -1,91 +1,5 @@
 # Hunter
-
-
-
-The below *Shots* macros will :
-* Not interpret Rapid Shot
-* Will priority target the mouseover target
-* If no mouseover, the players target will be attacked
-* The key benefit is that you never drop the main target
-
-## Aimed Shot
-```
-#showtooltip Aimed Shot
-/petattack
-/startattack
-/use Claw(Basic Attack)
-/use Bite(Basic Attack)
-/use Smack(Basic Attack)
-/use [@mouseover,harm,nodead,nochanneling:Rapid Fire] Aimed Shot [nochanneling:Rapid Fire] Aimed Shot
-```
-
-## Steady Shot
-```
-#showtooltip Steady Shot
-/petattack
-/startattack
-/use Claw(Basic Attack)
-/use Bite(Basic Attack)
-/use Smack(Basic Attack)
-/use [@mouseover,harm,nodead,nochanneling:Rapid Fire] Steady Shot [nochanneling:Rapid Fire] Steady Shot
-```
-
-## Multi-Shot
-```
-#showtooltip Multi-Shot
-/petattack
-/startattack
-/use Claw(Basic Attack)
-/use Bite(Basic Attack)
-/use Smack(Basic Attack)
-/use [@mouseover,harm,nodead,nochanneling:Rapid Fire] Multi-Shot [nochanneling:Rapid Fire] Multi-Shot
-```
-
-## Arcane Shot
-```
-#showtooltip Arcane Shot
-/petattack
-/startattack
-/use Claw(Basic Attack)
-/use Bite(Basic Attack)
-/use Smack(Basic Attack)
-/use [@mouseover,harm,nodead,nochanneling:Rapid Fire] Arcane Shot [nochanneling:Rapid Fire] Arcane Shot
-```
-
-## Rapid Fire
-```
-#showtooltip Rapid Fire
-/petattack
-/startattack
-/use Claw(Basic Attack)
-/use Bite(Basic Attack)
-/use Smack(Basic Attack)
-/use [@mouseover,harm,nodead,nochanneling:Rapid Fire] Rapid Fire [nochanneling:Rapid Fire] Rapid Fire
-```
-
-## Counter Shot
-```
-#showtooltip Counter Shot
-/petattack
-/startattack
-/use Claw(Basic Attack)
-/use Bite(Basic Attack)
-/use Smack(Basic Attack)
-/use [@mouseover,harm,nodead] Counter Shot; Counter Shot
-```
-Note: This shot will interupt Rapid Shot
-
-## True Shot
-```
-#showtooltip Trueshot
-/use [nochanneling:Rapid Fire] Trueshot
-```
-
-## Double Tap
-```
-#showtooltip Double Tap
-/use [nochanneling:Rapid Fire] Double Tap
-```
+# General
 
 ## Tar Trap
 ```
@@ -115,9 +29,140 @@ Note: This shot will interupt Rapid Shot
 ```
 /cancelaura Aspect of the Turtle
 ```
-Note : I like to have this on a seconday key so i can spam Aspect of the Turtle
+
+## Use Extra Action Buttion & Cancel Slow Fall
+```
+/click ExtraActionButton1
+/dismount [mounted]
+/cancelaura slow fall
+```
+
+# MM
+
+The below *Shots* macros will :
+* Not interpret Rapid Shot
+* Will priority target the mouseover target
+* If no mouseover, the players target will be attacked
+* The key benefit is that you never drop the main target
+
+## Aimed Shot
+```
+#showtooltip Aimed Shot
+/startattack
+/petattack [@pettarget,noexists]target
+/use [@mouseover,harm,nodead,nochanneling:Rapid Fire] [nochanneling:Rapid Fire] Aimed Shot
+```
+
+## Steady Shot
+```
+#showtooltip Steady Shot
+/startattack
+/petattack [@pettarget,noexists]target
+/use [@mouseover,harm,nodead,nochanneling:Rapid Fire] [nochanneling:Rapid Fire] Steady Shot
+```
+
+## Multi-Shot
+```
+#showtooltip Multi-Shot
+/startattack
+/petattack [@pettarget,noexists]target
+/use [@mouseover,harm,nodead,nochanneling:Rapid Fire] [nochanneling:Rapid Fire] Multi-Shot
+```
+
+## Arcane Shot
+```
+#showtooltip Arcane Shot
+/startattack
+/petattack [@pettarget,noexists]target
+/use [@mouseover,harm,nodead,nochanneling:Rapid Fire] [nochanneling:Rapid Fire] Arcane Shot
+```
+
+## Rapid Fire
+```
+#showtooltip Rapid Fire
+/startattack
+/petattack [@pettarget,noexists]target
+/use [@mouseover,harm,nodead,nochanneling:Rapid Fire] [nochanneling:Rapid Fire] Rapid Fire
+```
+
+## Counter Shot
+```
+#showtooltip Counter Shot
+/stopcasting
+/use [@mouseover,harm,nodead] Counter Shot [] Counter Shot
+```
+
+## True Shot
+```
+#showtooltip Trueshot
+/use [nochanneling:Rapid Fire] Trueshot
+```
+
+## Double Tap
+```
+#showtooltip Double Tap
+/use [nochanneling:Rapid Fire] Double Tap
+```
+# SV
+
+### Serpent Sting
+```
+#showtooltip Serpent Sting
+/startattack
+/petattack [@pettarget,noexists]target
+/use [@mouseover,harm,nodead] [] Serpent Sting
+```
+
+## Carve
+```
+#showtooltip Carve
+/startattack
+/petattack [@pettarget,noexists]target
+/use [@mouseover,harm,nodead] [] Carve
+```
+
+## Harpoon
+```
+#showtooltip Harpoon
+/startattack
+/petattack [@pettarget,noexists]target
+/use [@mouseover,harm,nodead] [] Harpoon
+```
+
+## Kill Command
+```
+#showtooltip Kill Command
+/startattack
+/petattack [@pettarget,noexists]target
+/use [@mouseover,harm,nodead][@pettarget,exists] [] Kill Command
+```
+
+## Mongoose Bite
+```
+#showtooltip Mongoose Bite
+/startattack
+/petattack [@pettarget,noexists]target
+/use [@mouseover,harm,nodead] [] Mongoose Bite
+```
+
+## Wildfire Bomnb
+```
+#showtooltip Wildfire Bomb
+/startattack
+/petattack [@pettarget,noexists]target
+/use [@mouseover,harm,nodead] [] Wildfire Bomb
+```
+
+## Muzzle
+```
+#showtooltip
+/stopcasting
+/use [@mouseover,harm,nodead] [] Muzzle
+```
 
 
+
+# Pet
 
 ## One Button Pet (Still buggy when the pet is going into Combat)
 ```
@@ -126,6 +171,7 @@ Note : I like to have this on a seconday key so i can spam Aspect of the Turtle
 /petattack [@pettarget,noexists]target
 /petfollow [@pettarget,exists]
 /petattack [@mouseover,harm,nodead]
+
 ```
 
 ## Pet Dispell
@@ -139,10 +185,4 @@ Note : I like to have this on a seconday key so i can spam Aspect of the Turtle
 /use [pet:Hati]Spirit Shock(Special Ability)
 ```
 
-## Use Extra Action Buttion & Cancel Slow Fall
-```
-/click ExtraActionButton1
-/cancelaura slow fall
-```
-Usefull for Mecha 
 
