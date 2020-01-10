@@ -24,6 +24,13 @@
 /cast [nochanneling:Rapid Fire] Light's Judgment(Racial)
 ```
 
+## Aspect of the Turtle
+```
+#showtooltip Aspect of the Turtle
+/stopcasting
+/cast Aspect of the Turtle
+```
+
 ## Cancel Aspect of the Turtle
 ```
 /cancelaura Aspect of the Turtle
@@ -159,8 +166,6 @@ The below *Shots* macros will :
 /use [@mouseover,harm,nodead] [] Muzzle
 ```
 
-
-
 # Pet
 
 ## One Button Pet (Still buggy when the pet is going into Combat)
@@ -170,7 +175,6 @@ The below *Shots* macros will :
 /petattack [@pettarget,noexists]target
 /petfollow [@pettarget,exists]
 /petattack [@mouseover,harm,nodead]
-
 ```
 
 ## Pet Dispell
