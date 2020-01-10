@@ -1,4 +1,3 @@
-# Hunter
 # General
 
 ## Tar Trap
