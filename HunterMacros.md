@@ -144,7 +144,7 @@ The below *Shots* macros will :
 /use [@mouseover,harm,nodead] [] Mongoose Bite
 ```
 
-## Wildfire Bomnb
+## Wildfire Bomb
 ```
 #showtooltip Wildfire Bomb
 /startattack
